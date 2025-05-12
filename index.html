@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Options</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background-color:white;
+    }
+
+    .payment-section {
+      background-color:white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 100px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color:black;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .payment-option-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .payment-option {
+      border: 1px solid grey;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .payment-option:hover {
+      transform: translateY(-2px);
+    }
+
+    .payment-option img {
+      max-width: 60px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .bank-name {
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .bank-charges {
+      color:grey;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+
+    .click-button {
+      background-color: orange;
+      color: black;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9em;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .click-button:hover {
+      background-color: orange;
+    }
+
+    .click-button:focus {
+      outline: 2px solid #333;
+      outline-offset: 2px;
+    }
+
+    .unavailable-message {
+      color: red;
+      font-size: 0.8em;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="payment-section">
+    <h2>Net Banking</h2>
+    <div class="payment-option-grid">
+      <div class="payment-option">
+        <img src="sbi.avif" alt="State Bank of India Logo - Net Banking">
+        <div class="bank-name">State Bank of India</div>
+        <div class="bank-charges">Bank Charges: 11.6</div>
+        <a href="method.html" class="click-button">Click Here</a>
+      </div>
+      <div class="payment-option">
+        <img src="other bank int.avif" alt="Other Banks Logo - Net Banking">
+        <div class="bank-name">Other Banks Internet Banking</div>
+        <div class="bank-charges">Bank Charges: 17.7</div>
+        <a href="method.html" class="click-button">Click Here</a>
+      </div>
+    </div>
+  </div>
+  <div class="payment-section">
+    <h2> Online Banking</h2>
+    <div class="payment-option-grid">
+      <div class=" payment-option">
+        <img src="phonepe.png" alt="phonepe">
+        <div class="bank-name">phonepe</div>
+        <div class="bank-charges">bank-charges:0.0</div>
+       <a href="upi://pay?pa=7981619907@axl&pn=B%20Rupesh%20Naick&am=100&cu=INR&tn=Payment%20to%20Rupesh" target="_blank"
+        class="click-button">phonepe</a>
+      </div>
+      <div class=" payment-option">
+        <img src="googlepay.png" alt="googlepay">
+        <div class="bank-name">googlepay</div>
+        <div class="bank-charges">bank-charges:0.0</div>
+         <a href="upi://pay?pa=7981619907@axl&pn=B%20Rupesh%20Naick&am=100&cu=INR&tn=Payment%20to%20Rupesh" target="_blank"
+        class="click-button">googlepay</a>
+      </div>
+      <div class=" payment-option">
+        <img src="paytm.png" alt="payment">
+        <div class="bank-name">paytm</div>
+        <div class="bank-charges">bank-charges:0.0</div>
+         <a href="upi://pay?pa=7981619907@axl&pn=B%20Rupesh%20Naick&am=100&cu=INR&tn=Payment%20to%20Rupesh" target="_blank"
+        class="click-button">paytm</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-section" id="card-payment-section">
+    <h2>Card Payments</h2>
+    <div class="payment-option-grid">
+      <div class="payment-option">
+        <img src="sbi debit.png" alt="SBI ATM-cum-Debit Card Logo">
+        <div class="bank-name">State Bank ATM-cum-Debit Card</div>
+        <div class="bank-charges">Bank Charges: 0.0</div>
+        <a href="method.html" class="click-button">Click Here</a>
+      </div>
+      <div class="payment-option">
+        <img src="other debit.jpg" alt="Other Bank Debit Cards Logo">
+        <div class="bank-name">Other Bank Debit Cards</div>
+        <div class="bank-charges">Bank Charges: 0.0</div>
+        <a href="method.html" class="click-button">Click Here</a>
+      </div>
+      <div class="payment-option">
+        <img src="credit.png" alt="Credit Cards Logo">
+        <div class="bank-name">Credit Cards</div>
+        <div class="bank-charges">Bank Charges: 27.75</div>
+        <a href="method.html" class="click-button">Click Here</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-section">
+    <h2>Other Payment </h2>
+    <div class="payment-option-grid">
+      <div class="payment-option">
+        <img src="branch.jpg" alt="Branch Payment Logo">
+        <div class="bank-name">Branch</div>
+        <div class="bank-charges">Bank Charges: 59.0</div>
+        <a href="#" class="click-button">Click Here</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Rupesh. All rights reserved.
+  </footer>
+  <script>
+    function redirectTo(url) {
+      window.location.href = url;
+    }
+  </script>
+  
+</body>
+</html>

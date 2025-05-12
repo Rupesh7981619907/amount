@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Card Details</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        .expiry-cvv {
+            flex-grow: 1;
+        }
+
+        .cvv-help {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8em;
+            color: #666;
+            cursor: help;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .button {
+            background-color: #1976d2;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button.cancel {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        .payment-logos {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .payment-logos img {
+            height: 25px;
+        }
+
+        .expiry-text {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Card Details</h2>
+
+        <div class="input-group">
+            <label for="name">Name on Card</label>
+            <input type="text" id="name" class="input-field" placeholder="Enter name as it appears on card">
+        </div>
+
+        <div class="input-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" class="input-field" placeholder="Enter card number">
+        </div>
+
+        <div class="input-group">
+            <div class="expiry-cvv">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" class="input-field" placeholder="MM/YY">
+            </div>
+            <div class="expiry-cvv">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" class="input-field" placeholder="CVV">
+            </div>
+            <div class="cvv-help">?</div>
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="button">Pay</a>
+            <a href="#" class="button cancel">Cancel</a>
+        </div>
+
+        <div class="payment-logos">
+            <img src="phonepe.png" alt="master card">
+            <img src="paytm.png" alt="Visa">
+            <img src="googlepay.png" alt="RuPay">
+            <img src="sbi debit.png" alt="PCI DSS Compliant" height="25">
+        </div>
+
+        <p class="expiry-text">This page will expire in 5 minutes</p>
+    </div>
+</body>
+</html>
